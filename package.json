@@ -1,0 +1,34 @@
+{
+  "name": "bitclass-chat-app",
+  "version": "1.0.0",
+  "description": "Bitclass live chat application",
+  "main": "server.js",
+  "author": "Shubh",
+  "license": "MIT",
+  "private": true,
+  "type":"commonjs",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "esm": "^3.2.25",
+    "express": "^4.18.1",
+    "mongoose": "^6.4.2",
+    "morgan": "^1.10.0",
+    "socket.io": "^4.5.1",
+    "winston": "^3.8.1",
+    "winston-daily-rotate-file": "^4.7.1"
+  },
+  "scripts": {
+    "start": "NODE_ENV=production node -r esm server.js",
+    "dev": "NODE_ENV=development nodemon -r esm server.js",
+    "prod": "nodemon -r esm server.js"
+  },
+  "devDependencies": {
+    "@typescript-eslint/parser": "^5.30.4",
+    "eslint": "^8.19.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "nodemon": "^2.0.18",
+    "prettier": "^2.7.1"
+  }
+}
